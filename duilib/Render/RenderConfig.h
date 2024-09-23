@@ -19,42 +19,8 @@
 //Skia引擎需要依赖
 #ifdef DUILIB_BUILD_FOR_WIN
     #pragma comment (lib, "opengl32.lib")
+    #pragma comment (lib, "skia.lib")
 #endif
 
-#ifdef DUILIB_RENDER_SKIA_BY_LLVM
-    //使用LLVM编译Skia
-    #ifdef _DEBUG
-        //Debug版本
-        #ifdef  _WIN64
-            #pragma comment (lib, "../../../skia/out/LLVM.x64.Debug/skia.lib")
-        #else
-            #pragma comment (lib, "../../../skia/out/LLVM.x86.Debug/skia.lib")
-        #endif //_WIN64    
-    #else
-        //Release版本
-        #ifdef  _WIN64
-            #pragma comment (lib, "../../../skia/out/LLVM.x64.Release/skia.lib")
-        #else
-            #pragma comment (lib, "../../../skia/out/LLVM.x86.Release/skia.lib")
-        #endif //_WIN64    
-    #endif //_DEBUG
-#else
-    //使用Visual Studio 2022编译Skia
-    #ifdef _DEBUG
-        //Debug版本
-        #ifdef  _WIN64
-            #pragma comment (lib, "../../../skia/out/vs2022.x64.Debug/skia.lib")
-        #else
-            #pragma comment (lib, "../../../skia/out/vs2022.x86.Debug/skia.lib")
-        #endif //_WIN64    
-    #else
-        //Release版本
-        #ifdef  _WIN64
-            #pragma comment (lib, "../../../skia/out/vs2022.x64.Release/skia.lib")
-        #else
-            #pragma comment (lib, "../../../skia/out/vs2022.x86.Release/skia.lib")
-        #endif //_WIN64    
-    #endif //_DEBUG
-#endif //DUILIB_RENDER_SKIA_BY_LLVM
 
 #endif // UI_RENDER_RENDER_CONFIG_H_

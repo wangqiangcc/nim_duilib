@@ -49,9 +49,6 @@
     <Filter Include="third_party\utf">
       <UniqueIdentifier>{cb38dc5a-5965-410d-9a6a-60d420e4f226}</UniqueIdentifier>
     </Filter>
-    <Filter Include="RenderSkia\Skia">
-      <UniqueIdentifier>{9c093c10-7a9b-4154-b865-18b9cde23965}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation\AnimationPlayer.cpp">
@@ -447,9 +444,6 @@
     <ClCompile Include="Utils\FilePathUtil.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\skia\tools\window\WindowContext.cpp">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClCompile>
     <ClCompile Include="RenderSkia\Render_Skia_Windows.cpp">
       <Filter>RenderSkia</Filter>
     </ClCompile>
@@ -458,12 +452,6 @@
     </ClCompile>
     <ClCompile Include="RenderSkia\SkGLWindowContext_Windows.cpp">
       <Filter>RenderSkia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\skia\tools\window\GLWindowContext.cpp">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\skia\tools\gpu\gl\win\SkWGL_win.cpp">
-      <Filter>RenderSkia\Skia</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -995,12 +983,6 @@
     <ClInclude Include="Utils\FilePathUtil.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skia\tools\window\DisplayParams.h">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skia\tools\window\WindowContext.h">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClInclude>
     <ClInclude Include="RenderSkia\Render_Skia_Windows.h">
       <Filter>RenderSkia</Filter>
     </ClInclude>
@@ -1009,15 +991,6 @@
     </ClInclude>
     <ClInclude Include="RenderSkia\SkGLWindowContext_Windows.h">
       <Filter>RenderSkia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skia\tools\window\GLWindowContext.h">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skia\tools\window\RasterWindowContext.h">
-      <Filter>RenderSkia\Skia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skia\tools\gpu\gl\win\SkWGL.h">
-      <Filter>RenderSkia\Skia</Filter>
     </ClInclude>
     <ClInclude Include="Utils\Macros_Windows.h">
       <Filter>Utils</Filter>
